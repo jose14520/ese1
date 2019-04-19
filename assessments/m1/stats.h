@@ -14,8 +14,8 @@
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Jose Acuna
+ * @date 04.19.2019
  *
  */
 #ifndef __STATS_H__
