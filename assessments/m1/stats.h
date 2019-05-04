@@ -114,11 +114,11 @@ unsigned char find_maximum(unsigned char * arr, unsigned int len);
 unsigned char find_minimum(unsigned char * arr, unsigned int len);
 
 /**
- * @brief Sorts a given array of numbers from smallest to largest
+ * @brief Sorts a given array of numbers from largest to smallest
  *
  * Performs a bubble sort on the given array. As the array is traversed,
- * the largest value bubbles to the end of the array and subsequent traversals
- * bubble the next largest values to the end until the array is sorted.
+ * the smallest value bubbles to the end of the array and subsequent traversals
+ * bubble the next smallest values to the end until the array is sorted.
  *
  * @param arr A pointer to the first elemenet of an array of unsigned chars.
  *            This array is sorted
