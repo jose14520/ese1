@@ -87,11 +87,11 @@ unsigned char find_median(unsigned char * arr, unsigned int len){
   sort_array(copy, len);
   unsigned char result = 0;
   if (len % 2 == 1){
-    result = arr[ len / 2 + 1];
+    result = copy[len / 2 + 1];
   }
   else{
-    unsigned char num1 = arr[len / 2];
-    unsigned char num2 = arr[len / 2 + 1];
+    unsigned char num1 = copy[len / 2];
+    unsigned char num2 = copy[len / 2 + 1];
     result = (unsigned char) (num1 + num2) / 2;
   }
 
