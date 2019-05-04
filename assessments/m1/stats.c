@@ -114,7 +114,7 @@ unsigned char find_mean(unsigned char * arr, unsigned int len){
 unsigned char find_maximum(unsigned char * arr, unsigned int len){
   unsigned char max = arr[0];
   for (unsigned int i = 1; i < len; i++){
-    if (max > arr[i]){
+    if (arr[i] > max){
       max = arr[i];
     }
   }
@@ -126,7 +126,7 @@ unsigned char find_maximum(unsigned char * arr, unsigned int len){
 unsigned char find_minimum(unsigned char * arr, unsigned int len){
   unsigned char min = arr[0];
   for (unsigned int i = 1; i < len; i++){
-    if (min < arr[i]){
+    if (arr[i] < min){
       min = arr[i];
     }
   }
@@ -139,7 +139,7 @@ void sort_array(unsigned char * arr, unsigned int len){
     for (unsigned int j = 0; j < len - i - 1; j++){
       unsigned char num1 = arr[j];
       unsigned char num2 = arr[j+1];
-      if (num1 > num2){
+      if (num1 < num2){
         arr[j+1] = num1;
         arr[j] = num2;
       }
