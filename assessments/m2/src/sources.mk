@@ -8,12 +8,16 @@
 # misuse of this material. 
 #
 #*****************************************************************************
-
-# Add your Source files to this variable
 SOURCES = 	main.c \
 			memory.c
+INCLUDES = -I ../include/common/
+ifeq ($(PLATFORM), MSP432)
+	SOURCES += 	startup_msp432p401r_gcc.c \
+				system_msp432p401r.c \
+				interrupts_msp432p401r_gcc.c
+	INCLUDES += -I ../include/msp432/ \
+				-I ../include/CMSIS
+endif	
 
-# Add your include paths to this variable
-INCLUDES = -I./../include/common
 
 
