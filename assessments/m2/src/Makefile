@@ -93,5 +93,4 @@ compile-all:
 
 .PHONY: clean
 clean:
-	rm -f $(ASMS) $(OBJS) $(DEPS) $(LINKS) $(TARGET).map $(TARGET).out
-
+	rm -f *.asm *.o *.d *.i *.size *.map *.out
